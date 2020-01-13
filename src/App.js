@@ -7,6 +7,7 @@ import HookCounterThree from './components/HookCounterThree';
 import HookCounterFour from './components/HookCounterFour';
 import ClassCounterOne from './components/ClassCounterOne';
 import EffectHookCounterOne from './EffectHookCounterOne';
+import HookMouse from './components/HookMouse';
 
 function App() {
 	return (
@@ -31,11 +32,12 @@ function App() {
 			<HookCounterFour />
 			<hr />
 			<hr />
-			<h2>useEffect hook</h2>
+			<h2>useEffect hook/document.title</h2>
 			<hr />
 			<ClassCounterOne />
 			<hr />
 			<EffectHookCounterOne />
+			<HookMouse />
 		</div>
 	);
 }
