@@ -11,6 +11,8 @@ import MouseContainer from './components/MouseContainer';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFetching from './components/DataFetching';
 import ComponentA from './components/ComponentA';
+import ReducerCounter from './components/ReducerCounter';
+import ReducerCounterTwo from './components/ReducerCounterTwo';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -58,6 +60,13 @@ function App() {
 					<ComponentA />
 				</ChannelContext.Provider>
 			</UserContext.Provider>
+			<hr />
+			<hr />
+			<h2>useReducer hook</h2>
+			<hr />
+			<ReducerCounter />
+			<hr />
+			<ReducerCounterTwo />
 		</div>
 	);
 }
