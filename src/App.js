@@ -5,10 +5,13 @@ import HookCounter from './components/HookCounter';
 import HookCounterTwo from './components/HookCounterTwo';
 import HookCounterThree from './components/HookCounterThree';
 import HookCounterFour from './components/HookCounterFour';
+import ClassCounterOne from './components/ClassCounterOne';
 
 function App() {
 	return (
 		<div className="App">
+			<h2>useState hook</h2>
+			<hr />
 			<label>Class counter:</label>
 			<ClassCounter />
 			<hr />
@@ -25,6 +28,11 @@ function App() {
 			<hr />
 
 			<HookCounterFour />
+			<hr />
+			<hr />
+			<h2>useEffect hook</h2>
+			<hr />
+			<ClassCounterOne />
 		</div>
 	);
 }
