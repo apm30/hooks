@@ -6,6 +6,7 @@ import HookCounterTwo from './components/HookCounterTwo';
 import HookCounterThree from './components/HookCounterThree';
 import HookCounterFour from './components/HookCounterFour';
 import ClassCounterOne from './components/ClassCounterOne';
+import EffectHookCounterOne from './EffectHookCounterOne';
 
 function App() {
 	return (
@@ -33,6 +34,8 @@ function App() {
 			<h2>useEffect hook</h2>
 			<hr />
 			<ClassCounterOne />
+			<hr />
+			<EffectHookCounterOne />
 		</div>
 	);
 }
