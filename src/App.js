@@ -9,6 +9,7 @@ import ClassCounterOne from './components/ClassCounterOne';
 import EffectHookCounterOne from './EffectHookCounterOne';
 import HookMouse from './components/HookMouse';
 import MouseContainer from './components/MouseContainer';
+import IntervalHookCounter from './components/IntervalHookCounter';
 
 function App() {
 	return (
@@ -40,6 +41,8 @@ function App() {
 			<EffectHookCounterOne />
 			<hr />
 			<MouseContainer />
+			<hr />
+			<IntervalHookCounter />
 		</div>
 	);
 }
