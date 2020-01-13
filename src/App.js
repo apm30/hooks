@@ -7,10 +7,13 @@ import HookCounterThree from './components/HookCounterThree';
 import HookCounterFour from './components/HookCounterFour';
 import ClassCounterOne from './components/ClassCounterOne';
 import EffectHookCounterOne from './EffectHookCounterOne';
-import HookMouse from './components/HookMouse';
 import MouseContainer from './components/MouseContainer';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFetching from './components/DataFetching';
+import ComponentA from './components/ComponentA';
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
 	return (
@@ -35,7 +38,7 @@ function App() {
 			<HookCounterFour />
 			<hr />
 			<hr />
-			<h2>useEffect hook/document.title</h2>
+			<h2>useEffect hook</h2>
 			<hr />
 			<ClassCounterOne />
 			<hr />
@@ -46,6 +49,15 @@ function App() {
 			<IntervalHookCounter />
 			<hr />
 			<DataFetching />
+			<hr />
+			<hr />
+			<h2>useContext hook</h2>
+			<hr />
+			<UserContext.Provider value={'username1'}>
+				<ChannelContext.Provider value={'channel1'}>
+					<ComponentA />
+				</ChannelContext.Provider>
+			</UserContext.Provider>
 		</div>
 	);
 }
