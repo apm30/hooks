@@ -13,6 +13,7 @@ import DataFetching from './components/DataFetching';
 import ComponentA from './components/ComponentA';
 import ReducerCounter from './components/ReducerCounter';
 import ReducerCounterTwo from './components/ReducerCounterTwo';
+import ReducerCounterThree from './components/ReducerCounterThree';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -67,6 +68,8 @@ function App() {
 			<ReducerCounter />
 			<hr />
 			<ReducerCounterTwo />
+			<hr />
+			<ReducerCounterThree />
 		</div>
 	);
 }
