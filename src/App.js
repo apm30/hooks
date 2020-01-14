@@ -17,6 +17,8 @@ import ReducerCounterThree from './components/ReducerCounterThree';
 import Component1 from './components/Component1';
 import Component2 from './components/Component2';
 import Component3 from './components/Component3';
+import DataFetchingOne from './components/DataFetchingOne';
+import DataFetchingTwo from './components/DataFetchingTwo';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -97,6 +99,13 @@ function App() {
 				<Component2 />
 				<Component3 />
 			</CountContext.Provider>
+			<hr />
+			<h2>data fetching setEffect setState</h2>
+			<DataFetchingOne />
+			<hr />
+			<h2>data fetching setEffect reducer</h2>
+			<DataFetchingTwo />
+			<hr />
 		</div>
 	);
 }
