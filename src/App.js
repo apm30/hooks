@@ -19,6 +19,7 @@ import Component2 from './components/Component2';
 import Component3 from './components/Component3';
 import DataFetchingOne from './components/DataFetchingOne';
 import DataFetchingTwo from './components/DataFetchingTwo';
+import ParentComponent from './components/ParentComponent';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -105,6 +106,8 @@ function App() {
 			<hr />
 			<h2>data fetching setEffect reducer</h2>
 			<DataFetchingTwo />
+			<hr />
+			<ParentComponent />
 			<hr />
 		</div>
 	);
